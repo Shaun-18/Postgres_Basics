@@ -4,12 +4,34 @@ Number_Wheels int,
 price int
 );
 
-SELECT * FROM vehicle
+SELECT * FROM vehicle;
 
 INSERT INTO vehicle VALUES
 ('Bike', 2, 2000),
 ('Quad Bike', 4, 7000),
 ('Bicycle', 2, 800);
+
+ALTER TABLE vehicle
+ADD Colour varchar(50);
+SELECT * FROM vehicle
+
+ALTER TABLE vehicle
+Alter column price TYPE Decimal(10,2);
+SELECT * FROM vehicle
+
+DELETE FROM vehicle
+WHERE Vehicle_Name = 'Bicycle';
+SELECT * FROM vehicle
+
+SELECT * FROM vehicle
+WHERE Vehicle_Name = 'Car';
+
+
+
+
+
+
+
 
 CREATE TABLE emp (
 Employee_ID int PRIMARY KEY,
